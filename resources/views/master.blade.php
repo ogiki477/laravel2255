@@ -62,6 +62,9 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+  .obori{
+    background-color: burlywood;
+  }
   
 </style>
 </html>

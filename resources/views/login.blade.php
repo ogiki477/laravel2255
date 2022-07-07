@@ -2,7 +2,8 @@
 
 @section('content')
 
-            
+<div class="box-form"> 
+    <div class="left">      
      <div class="container custom-login" >
          <div class="row">
             <div class="col-sm-4 col-sm-offset">
@@ -27,5 +28,6 @@
             </div>
          </div>
     </div>
-                
+</div> 
+</div>              
 @endsection
