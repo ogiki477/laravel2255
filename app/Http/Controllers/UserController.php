@@ -26,5 +26,15 @@ class UserController extends Controller
         return redirect('/');
     }
     }
+    function register(Request $req){
+    //this code on line 31  is for testing the the inputs u give in the form whether it can be displayed on the screen!!
+    //return $req->input();
+    $user = new user;
+    $user->name=$req->name;
+    $user->email=$req->email;
+    $user->password=Hash::make($req->password);
+    $user->save();
+    return redirect('/login');
+    }
 }
 

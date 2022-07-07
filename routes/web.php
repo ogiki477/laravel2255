@@ -26,6 +26,7 @@ Route::get('/logout', function () {
    
     
 });
+
 Route::post("/login", [UserController::class,'login']);
 Route::get("/", [ProductController::class,'index']);
 Route::get("detail/{id}",[ProductController::class,'detail']);
@@ -35,6 +36,9 @@ Route::get("removecart/{id}",[ProductController::class,'removeCart']);
 Route::get("ordernow",[ProductController::class,'orderNow']);
 Route::post("orderplace",[ProductController::class,'orderPlace']);
 Route::get("myorders",[ProductController::class,'myOrders']);
+Route::view('/register','register');
+//but this  route on line 41, its Register function is in the UserController
+Route::post("/register", [UserController::class,'register']);
 
 
 

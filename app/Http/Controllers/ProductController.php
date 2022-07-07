@@ -100,4 +100,5 @@ function myOrders(){
         ->get();
         return view('myorders',['orders'=>$orders]);
 }
+
 }
