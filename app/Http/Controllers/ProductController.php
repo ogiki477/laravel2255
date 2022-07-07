@@ -70,7 +70,7 @@ class ProductController extends Controller
         
         return view('ordernow',['total'=>$total]);
       }
-      //this function will accept data from a  form into database!!!
+      //this function will accept data from a payment  form into database!!!
       function orderPlace(Request $req){
         
         $userId = Session::get('user')['id'];
@@ -90,5 +90,14 @@ class ProductController extends Controller
           $req->input(); 
           return redirect('/');
       }
+}
+//This function shows you the orders you have made and the statuses plus your address
+function myOrders(){
+    $userId = Session::get('user')['id'];
+        $orders =   DB::table('orders')
+        ->join('products','orders.product_id','=','products.id')
+        ->where('orders.user_id', $userId)
+        ->get();
+        return view('myorders',['orders'=>$orders]);
 }
 }
