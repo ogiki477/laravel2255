@@ -17,10 +17,11 @@ class UserSeeder extends Seeder
         
         DB::table('users')->insert([
         'name'=> 'ogiki moses',
-        'email'=> 'omojick2255moses@gmail.com',
+        'email'=> 'omojick88moses@gmail.com',
         'password'=>Hash::make('2255')
 
 
         ]);
+        
     }
 }

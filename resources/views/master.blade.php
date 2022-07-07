@@ -24,8 +24,38 @@
 <style>
   .custom-login{
     height: 500px;
-    padding-top: 100px;
+    padding-top: 100px; 
+  }
+  .slider-img{
+      height: 300px !important
+  }
+  .custom-pproduct{
+    height: 600px;
+  }
+  .omo-moses{
+    background-color: skyblue;
+  }
+  .trending-image{
+    height: 100px;
+  }
+  .trending-item{
+    float: left;
+    width: 20%;
+  }
+  
+  .panel{
+    padding-bottom: 10%;
+  }
+  .panel-body{
+    padding-bottom: 10%;
 
+  }
+  .detail-img{
+    height:300px;
+  }
+  .omo{
+    padding-left: 85%;
+    
   }
   
 </style>
